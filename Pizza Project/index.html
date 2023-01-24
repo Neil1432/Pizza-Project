@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complete Responsive Pizza Shop Website Design</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- header section starts  -->
+
+    <header class="header">
+      <section class="flex">
+        <a href="#home" class="logo">PIZZERIA</a>
+
+        <nav class="navbar">
+          <a href="#home">home</a>
+          <a href="#about">about</a>
+          <a href="#menu">menu</a>
+          <a href="#order">order</a>
+          <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+          <div id="menu-btn" class="fas fa-bars"></div>
+          <div id="user-btn" class="fas fa-user"></div>
+          <div id="order-btn" class="fas fa-box"></div>
+          <div id="cart-btn" class="fas fa-shopping-cart"><span id="numOrder">(0)</span></div>
+        </div>
+      </section>
+    </header>
+
+    <!-- header section ends -->
+
+    <div class="user-account">
+      <section>
+        <div id="close-account"><span>close</span></div>
+
+        <div class="user">
+          <p><span>you are not logged in now!</span></p>
+        </div>
+        <div class="flex">
+          <form action="" method="post" id="loginform">
+            <h3>login now</h3>
+            <input
+              type="email"
+              name="email"
+              required
+              class="box"
+              placeholder="enter your email"
+              maxlength="50"
+            />
+            <input
+              type="password"
+              name="pass"
+              required
+              class="box"
+              placeholder="enter your password"
+              maxlength="20"
+            />
+            <input type="submit" value="login now" name="login" class="btn" />
+          </form>
+
+          <form action="" method="post" id="registerForm">
+            <h3>register now</h3>
+            <input
+              type="text"
+              name="name"
+              required
+              class="box"
+              placeholder="enter your name"
+              maxlength="20"
+            />
+            <input
+              type="email"
+              name="email"
+              required
+              class="box"
+              placeholder="enter your email"
+              maxlength="50"
+            />
+            <input
+              type="password"
+              name="pass"
+              required
+              class="box"
+              placeholder="enter your password"
+              maxlength="20"
+            />
+            <input
+              type="password"
+              name="cpass"
+              required
+              class="box"
+              placeholder="confirm your password"
+              maxlength="20"
+            />
+            <input
+              type="submit"
+              value="register now"
+              name="register"
+              class="btn"
+            />
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <div class="my-orders">
+      <section>
+        <div id="close-orders"><span>close</span></div>
+
+        <h3 class="title">my orders</h3>
+
+        <div id="mOrders">
+
+        </div>
+
+      </section>
+    </div>
+
+    <div class="shopping-cart">
+      <section >
+        <div id="close-cart"><span>close</span></div>
+
+      <div id="odcart">
+
+      </div>
+
+
+        <a href="#order" class="btn"> <span id="total">0</span> order now</a>
+      </section>
+    </div>
+
+    <div class="home-bg">
+      <section class="home" id="home">
+        <div class="slide-container">
+          <div class="slide active">
+            <div class="image">
+              <img src="images/home-img-1.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>homemade Pepperoni Pizza</h3>
+              <div class="fas fa-angle-left" onclick="prev()"></div>
+              <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="image">
+              <img src="images/home-img-2.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>Pizza With Mushrooms</h3>
+              <div class="fas fa-angle-left" onclick="prev()"></div>
+              <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="image">
+              <img src="images/home-img-3.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>Mascarpone And Mushrooms</h3>
+              <div class="fas fa-angle-left" onclick="prev()"></div>
+              <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+      <h1 class="heading">about us</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="images/about-1.svg" alt="" />
+          <h3>made with love</h3>
+          <p>
+            Mini pizzas on homemade thin crust dough + tons of topping ideas! These little bites are perfect for parties and fun for weeknights!
+
+          </p>
+          <a href="#menu" class="btn">our menu</a>
+        </div>
+
+        <div class="box">
+          <img src="images/about-2.svg" alt="" />
+          <h3>30 minutes delivery</h3>
+          <p>
+            We do all the shopping and cooking - plus free delivery. Chef prepared fresh just for you. Healthy meals delivered fresh to your door.
+
+          </p>
+          <a href="#menu" class="btn">our menu</a>
+        </div>
+
+        <div class="box">
+          <img src="images/about-3.svg" alt="" />
+          <h3>share with freinds</h3>
+          <p>
+            When you're with friends, you can be yourself.
+            So bring your best to the table and have a meal that makes you happy. 
+            Life doesn’t get better than this.
+
+
+          </p>
+          <a href="#menu" class="btn">our menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- menu section starts  -->
+
+    <section id="menu" class="menu">
+      <h1 class="heading">our menu</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="price">$<span>2</span>/-</div>
+          <img src="images/pizza-1.jpg" alt="" />
+          <div class="name">Cheese Pizza</div>
+          <form action="" method="post">
+            <input
+              type="number"
+              min="1"
+              max="100"
+              value="1"
+              class="qty"
+              name="qty"
+            />
+            <input
+              type="button"
+              value="add to cart"
+              name="add_to_cart"
+              class="btn"
+              onclick="pizza('Cheese Pizza',2 ,event)"
+            />
+          </form>
+        </div>
+
+        <div class="box">
+          <div class="price">$<span>4</span>/-</div>
+          <img src="images/pizza-2.jpg" alt="" />
+          <div class="name">Pizza Vegitariana</div>
+          <form action="" method="post">
+            <input
+              type="number"
+              min="1"
+              max="100"
+              value="1"
+              class="qty"
+              name="qty"
+            />
+            <input
+              type="button"
+              onclick="pizza('Pizza Vegitariana',4 ,event)"
+              value="add to cart"
+              name="add_to_cart"
+              class="btn"
+            />
+          </form>
+        </div>
+
+        <div class="box">
+          <div class="price">$<span>2</span>/-</div>
+          <img src="images/pizza-3.jpg" alt="" />
+          <div class="name">Pizza Cappricciosa</div>
+          <form action="" method="post">
+            <input
+              type="number"
+              min="1"
+              max="100"
+              value="1"
+              class="qty"
+              name="qty"
+            />
+            <input
+            type="button"
+            onclick="pizza('Pizza Cappricciosa',2 ,event)"
+              value="add to cart"
+              name="add_to_cart"
+              class="btn"
+            />
+          </form>
+        </div>
+
+        <div class="box">
+          <div class="price">$<span>3</span>/-</div>
+          <img src="images/pizza-4.jpg" alt="" />
+          <div class="name">Pizza Tomatoes-Mushroom</div>
+          <form action="" method="post">
+            <input
+              type="number"
+              min="1"
+              max="100"
+              value="1"
+              class="qty"
+              name="qty"
+            />
+            <input
+            type="button"
+            onclick="pizza('Pizza Tomatoes-Mushroom',3 ,event)"
+              value="add to cart"
+              name="add_to_cart"
+              class="btn"
+            />
+          </form>
+        </div>
+
+        <div class="box">
+          <div class="price">$<span>2</span>/-</div>
+          <img src="images/pizza-5.jpg" alt="" />
+          <div class="name">Pizza Mushroom</div>
+          <form action="" method="post">
+            <input
+              type="number"
+              min="1"
+              max="100"
+              value="1"
+              class="qty"
+              name="qty"
+            />
+            <input
+            type="button"
+            onclick="pizza('Pizza Mushroom',2 ,event)"
+              value="add to cart"
+              name="add_to_cart"
+              class="btn"
+            />
+          </form>
+        </div>
+
+        <div class="box">
+          <div class="price">$<span>4</span>/-</div>
+          <img src="images/pizza-6.jpg" alt="" />
+          <div class="name">Pizza Margherita</div>
+          <form action="" method="post">
+            <input
+              type="number"
+              min="1"
+              max="100"
+              value="1"
+              class="qty"
+              name="qty"
+            />
+            <input
+            type="button"
+            onclick="pizza('Pizza Margherita',4,event)"
+              value="add to cart"
+              name="add_to_cart"
+              class="btn"
+            />
+          </form>
+        </div>
+
+        <div class="box">
+          <div class="price">$<span>2</span>/-</div>
+          <img src="images/pizza-7.jpg" alt="" />
+          <div class="name">Pizza Spicy Tango</div>
+          <form action="" method="post">
+            <input
+              type="number"
+              min="1"
+              max="100"
+              value="1"
+              class="qty"
+              name="qty"
+            />
+            <input
+            type="button"
+            onclick="pizza('Pizza Spicy Tango',2,event)"
+              value="add to cart"
+              name="add_to_cart"
+              class="btn"
+            />
+          </form>
+        </div>
+
+        <div class="box">
+          <div class="price">$<span>3</span>/-</div>
+          <img src="images/pizza-8.jpg" alt="" />
+          <div class="name">Pizza Exotica</div>
+          <form action="" method="post">
+            <input
+              type="number"
+              min="1"
+              max="100"
+              value="1"
+              class="qty"
+              name="qty"
+            />
+            <input
+            type="button"
+            onclick="pizza('Pizza Exotica',3,event)"
+              value="add to cart"
+              name="add_to_cart"
+              class="btn"
+            />
+          </form>
+        </div>
+
+        <div class="box">
+          <div class="price">$<span>4</span>/-</div>
+          <img src="images/pizza-9.jpg" alt="" />
+          <div class="name">Pizza Mushroom Delux</div>
+          <form action="" method="post">
+            <input
+              type="number"
+              min="1"
+              max="100"
+              value="1"
+              class="qty"
+              name="qty"
+            />
+            <input
+            type="button"
+            onclick="pizza('Pizza Mushroom Delux',4,event)"
+              value="add to cart"
+              name="add_to_cart"
+              class="btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- menu section ends -->
+
+    <!-- order section starts  -->
+
+    <section class="order" id="order">
+      <h1 class="heading">order now</h1>
+
+      <form action="" method="post" id="pizzaform">
+         <div class="flex tab">
+          <div class="inputBox">
+            <span>Name :</span>
+            <input
+              type="text"
+              name="name"
+              class="box"
+              required
+              placeholder="Enter your Name"
+              maxlength="20"
+           
+            />
+          </div>
+          <div class="inputBox">
+            <span>Contact number :</span>
+            <input
+              type="text"
+              name="number"
+              class="box"
+              required
+              placeholder="Enter your contact number"
+           
+            />
+          </div>
+         
+          <div class="inputBox">
+            <span>Email :</span>
+            <input
+              type="email"
+              name="email"
+              class="box"
+              required
+              placeholder="Enter your email address"
+            
+            />
+          </div>
+       
+       
+          <h1>Pizza Specials</h1>
+
+          <div class="inputBox">
+            <span> Choose Pizza size</span>
+            <div class="pizza-size">
+             
+              <img src="./images/small.png" alt="small" id="img12" style="display: none;" >
+              <input type="radio" value="small" name="piz" id="pic" class="input-hidden" checked />
+                    <label for="pic">
+                      <img 
+                        src="./images/small.png" alt="" />
+                    </label>
+                    <input type="radio" value="medium" name="piz" id="pic2" class="input-hidden" />
+                    <label for="pic2"> 
+                        <img src="./images/medium.png">  
+                    </label>
+                    <input type="radio" value="large" name="piz" id="pic3" class="input-hidden" />
+                    <label for="pic3"> 
+                        <img src="./images/Large.png">  
+                    </label>
+                    <input type="radio" name="piz" value="xlarge" id="pic4" class="input-hidden" />
+                    <label for="pic4"> 
+                      <img src="./images/XLarge.png">
+                    </label>
+               
+            </div>
+          </div>
+          <div class="inputBox">
+            <span> Toppings </span>
+            <div class="toppings-container">
+               <div class="box" for="t1">
+                  <input type="checkbox" id="t1">
+                  <img src="images/mushroom.jpg" alt="" />
+                  <div class="name">Mushrooms</div>
+                </div>
+                <div class="box">
+                  <input type="checkbox" id="t2">
+                  <img src="images/jala.jpg" alt="" />
+                  <div class="name">Jalapenos</div>
+                </div>
+                <div class="box">
+                  <input type="checkbox" id="t3">
+                  <img src="images/chicken.jpg" alt="" />
+                  <div class="name">Chicken</div>
+                </div>
+                <div class="box">
+                  <input type="checkbox" id="t4">
+                  <img src="images/pepperoni.jpg" alt="" />
+                  <div class="name">Pepperoni</div>
+                </div>
+            </div>
+          </div>
+      
+
+          <div class="inputBox">
+            <span>Additional Comments :</span>
+            <textarea id="comments2" class="box"></textarea>
+          </div>
+        </div>
+
+       
+        <div style="overflow: auto">
+          <div style="float: right">
+            <button
+              type="submit"
+              id="nextBtn"
+              class="btn"
+           
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+
+        <!-- <input type="submit" value="order now" class="btn" name="order" /> -->
+
+        <div style="text-align: center; margin-top: 40px">
+          <span class="step"></span>
+         
+        </div>
+      </form>
+    </section>
+
+    <!-- order section ends -->
+    <section class="section contact" id="contact">
+      <h1 class="heading">Contact Us</h1>
+      <div class="location container">
+        <iframe
+          src="https://www.google.com/maps/d/embed?mid=1Ceg-YnW3MMndi2PAs-DSbimZFEE&ehbc=2E312F"
+          width="100%"
+          height="480"
+        ></iframe>
+      </div>
+      <div id="contact-form">
+        <h2>Have a question?</h2>
+        <h1>EMAIL US</h1>
+        <form id="contactForm">
+          <div class="input-fields">
+            <input
+              type="text"
+              class="contact-form-name"
+              placeholder="Enter your Name"
+            />
+            <p class="error-msg"></p>
+          </div>
+          <div class="input-fields">
+            <input
+              type="text"
+              class="phone_number"
+              placeholder="Phone Number"
+            />
+            <p class="error-msg"></p>
+          </div>
+          <div class="input-fields">
+            <input type="email" placeholder="Email Address" class="email_id" />
+            <p class="error-msg"></p>
+          </div>
+          <div class="input-fields">
+            <input type="date" placeholder="Select Date" />
+          </div>
+          <div class="input-fields">
+            <textarea
+              rows="5"
+              cols="30"
+              class="text_message"
+              placeholder="Enter message..."
+            ></textarea>
+            <p class="error-msg"></p>
+          </div>
+          <button type="button" class="btn" id="submit-btn">Submit</button>
+        </form>
+      </div>
+    </section>
+    <!-- footer section starts  -->
+
+    <footer>
+      <div class="footer-container">
+        <div>
+          <div class="title">Pizzeria</div>
+          <div>
+            <h4> Connect with us on social media!</h1>
+            <img src="./images/fb.jpeg" width="40" height="40">
+            <img src="./images/insta.jpeg" width="40" height="40">
+            <img src="./images/yt.jpeg" width="40" height="40">
+            <img src="./images/tweet.jpeg" width="40" height="40">
+          </div>
+        </div>
+        <div>
+          <div class="title">Reach us out</div>
+          <h5>Conestoga- 400104</h5>
+            <p class="contact-info">
+              Phone: <span> +123-456-7890 </span>
+            </p>
+            <p class="contact-info">
+              Email: <span>Pizzeria@google.com </span>
+            </p>
+        </div>
+        <div class="newsletter">
+          <div class="title">Newsletter</div>
+          <input type="email" placeholder="Enter your email">
+          <span>Subscribe</span>
+        </div>
+      </div>
+      <div id="copyright-text">Copyright &copy; 2022 Pizzeria</div>
+    </footer>
+
+   >
+    <script src="js/script.js"></script>
+  </body>
+</html>
